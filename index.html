@@ -3,61 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <title>Document</title>
+  <title>Input Form</title>
 </head>
 <body>
+
   <div class="container">
-    <div class="side-container">
-      <div class="side-container-top">
-        <h1>Join our winning team today</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, beatae.</p>
-      </div>
-      <div class="side-container-bottom">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea labore laudantium, quidem dolorum atque repudiandae fugiat. Quod id error laboriosam sunt odit eius consectetur.</p>
-    </div>
-    </div>
   <div class="form-container">
     <div class="header">
       <h2>Become a member</h2>
     </div>
-    <form class="form">
+    <form class="form" id="form">
 
-      <label for="username">Username</label>
-        <input type="text" 
-        class="username" 
+    <div class="form-control">
+      <label for="">Username</label>
+        <input 
+        type="text" 
+        id="username" 
         placeholder="username">
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
           <small>Error Message</small>
+    </div>
 
+    <div class="form-control">
       <label for="Email">Email</label>
-        <input type="Email" 
-        class="Email"
+        <input 
+        type="email" 
+        id="email"
         placeholder="example@email.com">
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
           <small>Error Message</small>
+    </div>
 
+    <div class="form-control">
       <label for="text">Password</label>
-        <input type="password" 
-        class="password" 
+        <input 
+        type="password" 
+        id="password" 
         placeholder="Password">
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
           <small>Error Message</small>
+    </div>
 
+    <div class="form-control">
       <label for="verify-password">Verify Password</label>
-        <input type="text" 
-        class="password2" 
+        <input 
+        type="text" 
+        id="passwordVerify" 
         placeholder="Re-enter Password">
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
           <small>Error Message</small>
+    </div>
+
+    <button class="submit" type="submit">Create Account</button>
     </form>
-    <button>Create Account</button>
   </div>
 </div>
 

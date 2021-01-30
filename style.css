@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-  font-family:'Roboto', sans-serif;
+  font-family:'Montserrat', sans-serif;
   background: rgb(51, 51, 51);
 }
 /* --------------------------------------------------------------------------- */
@@ -35,20 +34,13 @@ body {
 
 .side-container-top {
   border-top-left-radius: 10px;
-  padding: 2rem;
-  background: #2f2fa2;
-  height: 33%;
-  text-align: left;
-}
-
-
-.side-container-bottom {
   border-bottom-left-radius: 10px;
-  padding: 2rem;
-  background:#2f2fa2;
+  padding: 1rem;
+  background: #2f2fa2;
   height: 100%;
-  text-align: left;
+  text-align: center;
 }
+
 
 /* --------------------------------------------------------------------------- */
 
@@ -97,15 +89,34 @@ button {
 }
 
 button:hover {
-  background: #0d0f58;
-  transform: scale(1.01);
+  background: #080b49;
   transition: 0.4s ease-in-out;
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
 }
 
 .form-control i {
   visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
 }
 
-small {
+.form-control small {
   visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  visibility: visible;
 }
