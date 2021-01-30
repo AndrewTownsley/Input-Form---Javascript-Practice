@@ -51,10 +51,10 @@ function checkInputs() {
   
   // Make sure that when the password is re-entered in the "Verify-Password" input, it matches the first password input...
   //  If not, display an error message when the "submit" button is clicked...
-  if(passwordVerify === '') {
+  if(passwordVerifyValue === '') {
     displayErrorFor(passwordVerify, 'Password cannot be blank');
-  } else 
-  if(passwordVerifyValue !== passwordValue) {
+  } else if
+  (passwordVerifyValue !== passwordValue) {
     displayErrorFor(passwordVerify, 'Passwords must match');
   } else {
     displaySuccessFor(passwordVerify);
